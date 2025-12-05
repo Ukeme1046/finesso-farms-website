@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finesso Farms | Organic & Sustainable Agriculture</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    header {
+      background-color: #689f38;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .logo {
+      width: 220px;
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 12px;
+    }
+
+    nav {
+      background: #558b2f;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #dcedc8;
+    }
+
+    .hero {
+      text-align: center;
+      color: white;
+      padding: 120px 20px;
+      background-color: #7cb342;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #33691e;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #558b2f;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #33691e;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    footer a {
+      color: #c5e1a5;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="finesso-logo.jpg" alt="Finesso Farms Logo" class="logo">
+    <h1>Welcome to Finesso Farms</h1>
+    <p>Pure • Organic • Sustainable</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Fresh from Nature to Your Table</h1>
+    <p>Finesso Farms provides high-quality organic fish, chicken, tomatoes, and snails — raised naturally for a healthier future.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get in Touch</button>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Finesso Farms</h2>
+    <p>At Finesso Farms, we’re dedicated to organic and eco-friendly farming. Our methods ensure healthy soil, thriving animals, and chemical-free produce — for you and your family’s well-being.</p>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Our Organic Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src=fish.jpg alt="Organic Fish">
+        <h3>Organic Fish</h3>
+        <p>Fresh, healthy, and sustainably raised fish full of nutrients.</p>
+      </div>
+
+      <div class="product-card">
+        <img src=chickens.jpg alt="Free-range Chicken">
+        <h3>Free-range Chicken</h3>
+        <p>Tender, naturally-fed chicken with no hormones or antibiotics.</p>
+      </div>
+
+      <div class="product-card">
+        <img src=tomatoes.jpg alt="Organic Tomatoes">
+        <h3>Organic Tomatoes</h3>
+        <p>Bright red, juicy tomatoes grown without chemicals or pesticides.</p>
+      </div>
+
+      <div class="product-card">
+        <img src=snails.jpg alt="Farm-raised Snails">
+        <h3>Farm-raised Snails</h3>
+        <p>Rich in protein and farmed in clean, natural conditions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Want to partner, order, or learn more? We’d love to hear from you!</p>
+    <p><strong>Email:</strong> info@finessofarms.com</p>
+    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Finesso Farms | All Rights Reserved</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+  </footer>
+
+</body>
+</html>
